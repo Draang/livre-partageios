@@ -15,13 +15,13 @@
 		6C62F6B1257E3A9B00AB34DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C62F6B0257E3A9B00AB34DE /* ViewController.swift */; };
 		6CB334282578C7DC007D7A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB334272578C7DC007D7A99 /* AppDelegate.swift */; };
 		6CB3342A2578C7DC007D7A99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB334292578C7DC007D7A99 /* SceneDelegate.swift */; };
-		6CB3342C2578C7DC007D7A99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB3342B2578C7DC007D7A99 /* ViewController.swift */; };
 		6CB3342F2578C7DC007D7A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB3342D2578C7DC007D7A99 /* Main.storyboard */; };
 		6CB334312578C7EE007D7A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB334302578C7EE007D7A99 /* Assets.xcassets */; };
 		6CB334342578C7EE007D7A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB334322578C7EE007D7A99 /* LaunchScreen.storyboard */; };
 		6CB3343F2578C7EF007D7A99 /* Livre_Partage_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB3343E2578C7EF007D7A99 /* Livre_Partage_iosTests.swift */; };
 		6CB3344A2578C7EF007D7A99 /* Livre_Partage_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB334492578C7EF007D7A99 /* Livre_Partage_iosUITests.swift */; };
 		6CB334622578DC83007D7A99 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB334612578DC83007D7A99 /* APIManager.swift */; };
+		E39FA5FA2580BF3200A3AAD2 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39FA5F92580BF3200A3AAD2 /* BookTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		6CB334242578C7DC007D7A99 /* Livre Partage ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Livre Partage ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB334272578C7DC007D7A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CB334292578C7DC007D7A99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6CB3342B2578C7DC007D7A99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CB3342E2578C7DC007D7A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CB334302578C7EE007D7A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB334332578C7EE007D7A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		7AF40A3CCA5EB1E9E67045F1 /* Pods-Livre Partage ios-Livre Partage iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livre Partage ios-Livre Partage iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-Livre Partage ios-Livre Partage iosUITests/Pods-Livre Partage ios-Livre Partage iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A19A0681BAAB31F221CBD952 /* Pods_Livre_Partage_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Livre_Partage_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD358A3EFF0425D759B88FA0 /* Pods-Livre Partage ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livre Partage ios.release.xcconfig"; path = "Target Support Files/Pods-Livre Partage ios/Pods-Livre Partage ios.release.xcconfig"; sourceTree = "<group>"; };
+		E39FA5F92580BF3200A3AAD2 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		FC5D24039F3FA5F78B3961CF /* Pods-Livre Partage iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livre Partage iosTests.release.xcconfig"; path = "Target Support Files/Pods-Livre Partage iosTests/Pods-Livre Partage iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +112,7 @@
 			children = (
 				6C62F6AB257E3A5F00AB34DE /* TableViewCell.swift */,
 				6C62F6B0257E3A9B00AB34DE /* ViewController.swift */,
+				E39FA5F92580BF3200A3AAD2 /* BookTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,7 +147,6 @@
 				6CB334272578C7DC007D7A99 /* AppDelegate.swift */,
 				6C62F697257E116500AB34DE /* API.swift */,
 				6CB334292578C7DC007D7A99 /* SceneDelegate.swift */,
-				6CB3342B2578C7DC007D7A99 /* ViewController.swift */,
 				6CB3342D2578C7DC007D7A99 /* Main.storyboard */,
 				6CB334302578C7EE007D7A99 /* Assets.xcassets */,
 				6CB334322578C7EE007D7A99 /* LaunchScreen.storyboard */,
@@ -435,9 +435,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CB334622578DC83007D7A99 /* APIManager.swift in Sources */,
-				6CB3342C2578C7DC007D7A99 /* ViewController.swift in Sources */,
 				6CB334282578C7DC007D7A99 /* AppDelegate.swift in Sources */,
 				6C62F6AC257E3A5F00AB34DE /* TableViewCell.swift in Sources */,
+				E39FA5FA2580BF3200A3AAD2 /* BookTableViewCell.swift in Sources */,
 				6C62F6B1257E3A9B00AB34DE /* ViewController.swift in Sources */,
 				6CB3342A2578C7DC007D7A99 /* SceneDelegate.swift in Sources */,
 				6C62F698257E116500AB34DE /* API.swift in Sources */,
