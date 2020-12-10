@@ -80,7 +80,7 @@
         <!--Book View-->
         <scene sceneID="gqP-b2-zB8">
             <objects>
-                <viewController storyboardIdentifier="BookView" id="Aa3-Vi-8uI" customClass="BookView" customModule="Livre_Partage_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Aa3-Vi-8uI" customClass="BookView" customModule="Livre_Partage_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ud-nv-7OR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
