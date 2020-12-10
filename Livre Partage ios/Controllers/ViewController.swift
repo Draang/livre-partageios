@@ -53,7 +53,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		//TODO: clic sur une ligne du tableau (ouvre le détail du livre ?)
+        let storybord=UIStoryboard(name: "Main", bundle: nil)
+        let bookView=storybord.instantiateViewController(withIdentifier: "BookView") as! BookView
+        bookView.config()
+		
 	}
 
 }

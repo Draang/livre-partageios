@@ -12,7 +12,7 @@ class Api{
 		//On encode la recherche pour ajouter % à la place des eespaces par exemple
 		let escapedSearchString = q.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
 		
-		let escapedURLString = "https://www.googleapis.com/books/v1/volumes?q=\(escapedSearchString)" //&orderBy=relevance&maxResults=40"
+		let escapedURLString = "https://www.googleapis.com/books/v1/volumes?q=\(escapedSearchString)&orderBy=relevance&maxResults=40"
 		//Ensuite on la convertie en URL
 		let url = URL(string: escapedURLString)
 		
