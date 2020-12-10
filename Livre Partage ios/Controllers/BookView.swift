@@ -17,21 +17,24 @@ class BookView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let tit=t{
-            linetitle.text=String(describing: t)
+            linetitle.text=String(describing: tit)
             lineAuthor.text=String(describing: au)
             lineRat.text=String(describing: r)
         }
         // Do any additional setup after loading the view.
     }
     func config(t:String, au:[String],r:Double){
+        print(t)
+        print(au)
+        print(r)
         self.t=t
         self.au=au
         self.r=r
-        if t != nil{
-            linetitle.text=String(describing: t)
-            lineAuthor.text=String(describing: au)
-            lineRat.text=String(describing: r)
-        }
+        if t != nil && au != nil && r != nil{
+            linetitle.text=String(describing: self.t)
+            lineAuthor.text=String(describing: self.au)
+            lineRat.text=String(describing: self.r)}
+        
     }
 
     /*

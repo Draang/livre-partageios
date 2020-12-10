@@ -56,7 +56,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let book=books?[indexPath.row]{
         let storybord=UIStoryboard(name: "Main", bundle: nil)
         let bookView=storybord.instantiateViewController(withIdentifier: "BookView") as! BookView
-            bookView.config(t:book.volumeInfo?.title??,au:book.volumeInfo?.authors??[String](),r:book.volumeInfo?.averageRating?)
+            bookView.config(t: book.volumeInfo?.title ?? "", au: book.volumeInfo?.authors ?? [String](),r: book.volumeInfo?.averageRating ?? 1.0)
+         
             
         }
 		
