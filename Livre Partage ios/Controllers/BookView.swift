@@ -7,10 +7,12 @@
 
 import UIKit
 
-class BookView: UIViewController {
+class BookView: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet weak var linetitle:UILabel!
     @IBOutlet weak var lineAuthor:UILabel!
     @IBOutlet weak var lineRat:UILabel!
+    var imagePicker: UIImagePickerController!
+    @IBOutlet weak var imageView: UIImageView!
     var t:String?
     var au:[String]?
     var r:Double?
@@ -30,13 +32,38 @@ class BookView: UIViewController {
         self.t=t
         self.au=au
         self.r=r
-        if linetitle != nil{
+        if linetitle != nil && lineAuthor != nil && lineRat != nil{
         linetitle.text=String(describing: self.t)
-        lineAuthor.text=String(describing: self.au)
+            lineAuthor.text=String(describing: self.au)
         lineRat.text=String(describing: self.r)
         }
     }
 
+    @IBAction func takePhoto(_ sender: Any) {
+        if(UIImagePickerController .isSourceTypeAvailable(.camera)){
+            imagePicker =  UIImagePickerController()
+                imagePicker.delegate = self
+                imagePicker.sourceType = .camera
+
+                present(imagePicker, animated: true, completion: nil)
+        }else{
+            let alertController = UIAlertController(title: nil, message: "Device has no camera.", preferredStyle: .alert)
+
+               let okAction = UIAlertAction(title: "Alright", style: .default, handler: { (alert: UIAlertAction!) in
+               })
+
+               alertController.addAction(okAction)
+               self.present(alertController, animated: true, completion: nil)
+        }
+       
+
+       
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+            imagePicker.dismiss(animated: true, completion: nil)
+            imageView.image = info[.originalImage] as? UIImage
+        }
     /*
     // MARK: - Navigation
 
