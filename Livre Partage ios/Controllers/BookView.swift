@@ -30,11 +30,11 @@ class BookView: UIViewController {
         self.t=t
         self.au=au
         self.r=r
-        if t != nil && au != nil && r != nil{
-            linetitle.text=String(describing: self.t)
-            lineAuthor.text=String(describing: self.au)
-            lineRat.text=String(describing: self.r)}
-        
+        if linetitle != nil{
+        linetitle.text=String(describing: self.t)
+        lineAuthor.text=String(describing: self.au)
+        lineRat.text=String(describing: self.r)
+        }
     }
 
     /*

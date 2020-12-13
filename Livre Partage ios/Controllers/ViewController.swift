@@ -57,6 +57,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let storybord=UIStoryboard(name: "Main", bundle: nil)
         let bookView=storybord.instantiateViewController(withIdentifier: "BookView") as! BookView
             bookView.config(t: book.volumeInfo?.title ?? "", au: book.volumeInfo?.authors ?? [String](),r: book.volumeInfo?.averageRating ?? 1.0)
+            self.navigationController?.pushViewController(bookView, animated: true)
+            
          
             
         }
