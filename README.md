@@ -1,5 +1,7 @@
 # LIVRE-PARTAGE
 
+Projet developpé pour le cours de programmation iOS en LPro SMIN
+
 ## Copte rendu final
 
 [pdf](https://github.com/Draang/livre-partageios/blob/main/reso/Rapport%20io.pdf)
